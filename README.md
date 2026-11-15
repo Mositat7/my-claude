@@ -44,13 +44,13 @@ You pick the provider and model once in the Admin UI. Every agent you launch thr
 Windows PowerShell:
 
 ```powershell
-& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Mositat7/my-claude/main/scripts/install.ps1")))
+& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Mositat7/my-claude/main/free-claude-code-main/scripts/install.ps1")))
 ```
 
 macOS / Linux:
 
 ```bash
-curl -fsSL "https://raw.githubusercontent.com/Mositat7/my-claude/main/scripts/install.sh" | sh
+curl -fsSL "https://raw.githubusercontent.com/Mositat7/my-claude/main/free-claude-code-main/scripts/install.sh" | sh
 ```
 
 Pick at least one coding agent when asked. Optionally turn on RTK + Headroom to cut token usage.
@@ -185,22 +185,22 @@ Bring back the hidden installer options:
 
 ```powershell
 # Windows
-& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Mositat7/my-claude/main/scripts/install.ps1"))) -ShowAdvanced
+& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Mositat7/my-claude/main/free-claude-code-main/scripts/install.ps1"))) -ShowAdvanced
 ```
 
 ```bash
 # macOS / Linux
-curl -fsSL "https://raw.githubusercontent.com/Mositat7/my-claude/main/scripts/install.sh" | sh -s -- --show-advanced
+curl -fsSL "https://raw.githubusercontent.com/Mositat7/my-claude/main/free-claude-code-main/scripts/install.sh" | sh -s -- --show-advanced
 ```
 
 Local Whisper voice transcription (needs PyTorch, large download):
 
 ```powershell
-& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Mositat7/my-claude/main/scripts/install.ps1"))) -VoiceLocal
+& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Mositat7/my-claude/main/free-claude-code-main/scripts/install.ps1"))) -VoiceLocal
 ```
 
 ```bash
-curl -fsSL "https://raw.githubusercontent.com/Mositat7/my-claude/main/scripts/install.sh" | sh -s -- --voice-local
+curl -fsSL "https://raw.githubusercontent.com/Mositat7/my-claude/main/free-claude-code-main/scripts/install.sh" | sh -s -- --voice-local
 ```
 
 Chat from your phone, editor integrations and direct API usage are configured in the Admin UI under **Messaging** and **Integrations**, and work as described in the upstream documentation.
